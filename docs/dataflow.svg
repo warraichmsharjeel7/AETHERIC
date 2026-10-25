@@ -1,0 +1,235 @@
+<svg width="900" height="2400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#EF9F27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#D85A30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="aw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#e8e4de" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ██ BACKGROUND ██ -->
+  <rect width="900" height="2400" fill="#0a0a18"/>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 1 — AUTH -->
+  <!-- ================================================================ -->
+  <rect x="20" y="20" width="860" height="290" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="20" width="860" height="44" rx="12" fill="#1e1b4b"/>
+  <rect x="20" y="52" width="860" height="12" fill="#1e1b4b"/>
+  <text x="50" y="48" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#CECBF6">🔐  Authentication Flow</text>
+
+  <!-- row 1: User node -->
+  <rect x="370" y="84" width="160" height="40" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="109" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#CECBF6">👤 User — Login / Register</text>
+  <line x1="450" y1="124" x2="450" y2="144" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <!-- Firebase Auth -->
+  <rect x="330" y="144" width="240" height="40" rx="8" fill="#2a1f04" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="450" y="169" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#FAC775">🔥 Firebase Auth (Client SDK)</text>
+  <!-- branch lines -->
+  <line x1="380" y1="184" x2="300" y2="204" stroke="#EF9F27" stroke-width="1.2" marker-end="url(#aa)"/>
+  <line x1="520" y1="184" x2="600" y2="204" stroke="#EF9F27" stroke-width="1.2" marker-end="url(#aa)"/>
+
+  <!-- Email/Pass -->
+  <rect x="200" y="204" width="140" height="36" rx="8" fill="#2a1f04" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="270" y="226" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#EF9F27">Email / Password</text>
+  <!-- Google/GitHub -->
+  <rect x="560" y="204" width="140" height="36" rx="8" fill="#2a1f04" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="630" y="226" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#EF9F27">Google / GitHub</text>
+
+  <!-- merge back -->
+  <line x1="270" y1="240" x2="400" y2="260" stroke="#EF9F27" stroke-width="1.2" marker-end="url(#aa)"/>
+  <line x1="630" y1="240" x2="500" y2="260" stroke="#EF9F27" stroke-width="1.2" marker-end="url(#aa)"/>
+
+  <!-- JWT -->
+  <rect x="310" y="260" width="280" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="283" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#9FE1CB">✅ JWT Token → localStorage</text>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 2 — CART -->
+  <!-- ================================================================ -->
+  <rect x="20" y="330" width="860" height="300" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="330" width="860" height="44" rx="12" fill="#082d1f"/>
+  <rect x="20" y="362" width="860" height="12" fill="#082d1f"/>
+  <text x="50" y="358" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#9FE1CB">🛒  Add to Cart Flow</text>
+
+  <rect x="330" y="394" width="240" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="417" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#CECBF6">User clicks Add to Cart</text>
+  <line x1="450" y1="430" x2="450" y2="450" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="280" y="450" width="340" height="36" rx="8" fill="#1a1a1a" stroke="#444" stroke-width="0.8"/>
+  <text x="450" y="473" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#D3D1C7">Collect: product_id · name · price · qty</text>
+  <line x1="450" y1="486" x2="450" y2="506" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="270" y="506" width="360" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="529" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#CECBF6">POST /api/cart  +  JWT Token</text>
+  <line x1="450" y1="542" x2="450" y2="562" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="300" y="562" width="300" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="580" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#CECBF6">🛡️ Express → Verify JWT</text>
+  <line x1="450" y1="598" x2="450" y2="618" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="240" y="618" width="420" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="641" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">Supabase  INSERT INTO cart  ✅  Toast shown</text>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 3 — ORDER PLACEMENT -->
+  <!-- ================================================================ -->
+  <rect x="20" y="650" width="860" height="460" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="650" width="860" height="44" rx="12" fill="#1e1b4b"/>
+  <rect x="20" y="682" width="860" height="12" fill="#1e1b4b"/>
+  <text x="50" y="678" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#CECBF6">📦  Order Placement Flow</text>
+
+  <rect x="330" y="714" width="240" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="737" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#CECBF6">User clicks Checkout</text>
+  <line x1="450" y1="750" x2="450" y2="770" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="290" y="770" width="320" height="36" rx="8" fill="#1a1a1a" stroke="#444" stroke-width="0.8"/>
+  <text x="450" y="793" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#D3D1C7">Address Modal → POST /api/addresses</text>
+  <line x1="450" y1="806" x2="450" y2="826" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="250" y="826" width="400" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="849" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#CECBF6">POST /api/create-payment-intent</text>
+  <line x1="450" y1="862" x2="450" y2="882" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="260" y="882" width="380" height="36" rx="8" fill="#2a1f04" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="450" y="905" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#EF9F27">Express → Stripe API → Returns client_secret</text>
+  <line x1="450" y1="918" x2="450" y2="938" stroke="#EF9F27" stroke-width="1.2" marker-end="url(#aa)"/>
+
+  <rect x="270" y="938" width="360" height="36" rx="8" fill="#2a1f04" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="450" y="961" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#EF9F27">Stripe.js confirms card payment</text>
+  <line x1="450" y1="974" x2="450" y2="994" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="220" y="994" width="460" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="1017" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">POST /api/orders  →  JWT verify  →  Supabase INSERT orders + order_items</text>
+  <line x1="450" y1="1030" x2="450" y2="1050" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="270" y="1050" width="360" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="1073" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">DELETE cart  →  Send email  →  PDF receipt  ✅</text>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 4 — FAVOURITES -->
+  <!-- ================================================================ -->
+  <rect x="20" y="1130" width="860" height="280" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="1130" width="860" height="44" rx="12" fill="#2a0f08"/>
+  <rect x="20" y="1162" width="860" height="12" fill="#2a0f08"/>
+  <text x="50" y="1158" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#F5C4B3">❤️  Favourites Flow</text>
+
+  <rect x="330" y="1194" width="240" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="1217" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#CECBF6">User clicks Heart Icon</text>
+  <line x1="450" y1="1230" x2="450" y2="1250" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="310" y="1250" width="280" height="36" rx="8" fill="#1a1a1a" stroke="#444" stroke-width="0.8"/>
+  <text x="450" y="1273" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#D3D1C7">Is user logged in?</text>
+
+  <!-- YES branch -->
+  <line x1="380" y1="1286" x2="260" y2="1306" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+  <rect x="100" y="1306" width="310" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="255" y="1324" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">✅ YES → POST /api/favourites → Supabase INSERT → Heart RED</text>
+
+  <!-- NO branch -->
+  <line x1="520" y1="1286" x2="640" y2="1306" stroke="#D85A30" stroke-width="1.2" marker-end="url(#ac)"/>
+  <rect x="490" y="1306" width="350" height="36" rx="8" fill="#2a0f08" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="665" y="1324" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#F0997B">❌ NO → localStorage → Sync on login</text>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 5 — DASHBOARD -->
+  <!-- ================================================================ -->
+  <rect x="20" y="1430" width="860" height="280" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="1430" width="860" height="44" rx="12" fill="#082d1f"/>
+  <rect x="20" y="1462" width="860" height="12" fill="#082d1f"/>
+  <text x="50" y="1458" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#9FE1CB">📊  Customer Dashboard Flow</text>
+
+  <rect x="330" y="1494" width="240" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="1517" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#CECBF6">User opens Dashboard</text>
+  <line x1="450" y1="1530" x2="450" y2="1550" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="240" y="1550" width="420" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="1573" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">GET /api/orders/:userId  →  Supabase SELECT orders + order_items</text>
+  <line x1="450" y1="1586" x2="450" y2="1606" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="160" y="1606" width="580" height="36" rx="8" fill="#1a1a1a" stroke="#444" stroke-width="0.8"/>
+  <text x="450" y="1629" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#D3D1C7">Frontend calculates: Total Spent · Orders Count · Avg Value · Monthly Chart · Category Chart</text>
+  <line x1="450" y1="1642" x2="450" y2="1662" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="300" y="1662" width="300" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="1685" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">Dashboard renders with real data  ✅</text>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 6 — STRIPE WEBHOOK -->
+  <!-- ================================================================ -->
+  <rect x="20" y="1730" width="860" height="300" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="1730" width="860" height="44" rx="12" fill="#2a1f04"/>
+  <rect x="20" y="1762" width="860" height="12" fill="#2a1f04"/>
+  <text x="50" y="1758" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#FAC775">🔔  Stripe Webhook Flow</text>
+
+  <rect x="290" y="1794" width="320" height="36" rx="8" fill="#2a1f04" stroke="#854F0B" stroke-width="0.8"/>
+  <text x="450" y="1817" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#FAC775">Stripe processes payment</text>
+  <line x1="450" y1="1830" x2="450" y2="1850" stroke="#EF9F27" stroke-width="1.2" marker-end="url(#aa)"/>
+
+  <rect x="230" y="1850" width="440" height="36" rx="8" fill="#1e1b4b" stroke="#534AB7" stroke-width="0.8"/>
+  <text x="450" y="1873" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#CECBF6">POST /api/webhook/stripe  (no JWT)  →  Verify signature</text>
+  <line x1="450" y1="1886" x2="450" y2="1906" stroke="#534AB7" stroke-width="1.2" marker-end="url(#ap)"/>
+
+  <rect x="240" y="1906" width="420" height="36" rx="8" fill="#1a1a1a" stroke="#444" stroke-width="0.8"/>
+  <text x="450" y="1929" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#D3D1C7">Event: checkout.session.completed</text>
+  <line x1="450" y1="1942" x2="450" y2="1962" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="210" y="1962" width="480" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="450" y="1985" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">Supabase UPDATE order status: pending → confirmed  →  200 OK  ✅</text>
+
+  <!-- ================================================================ -->
+  <!-- FLOW 7 — EMAIL + FORMSPREE -->
+  <!-- ================================================================ -->
+  <rect x="20" y="2050" width="860" height="330" rx="12" fill="#0f0f1e" stroke="#2a2a4a" stroke-width="1"/>
+  <rect x="20" y="2050" width="860" height="44" rx="12" fill="#1a1a1a"/>
+  <rect x="20" y="2082" width="860" height="12" fill="#1a1a1a"/>
+  <text x="50" y="2078" font-family="Helvetica Neue,Arial,sans-serif" font-size="15" font-weight="700" fill="#D3D1C7">📧  Email + ⚡ Formspree Flow</text>
+
+  <!-- Email -->
+  <rect x="100" y="2114" width="300" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="250" y="2137" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#9FE1CB">Order saved in database</text>
+  <line x1="250" y1="2150" x2="250" y2="2170" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="80" y="2170" width="340" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="250" y="2193" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">Express calls sendOrderEmail()</text>
+  <line x1="250" y1="2206" x2="250" y2="2226" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="60" y="2226" width="380" height="52" rx="8" fill="#1a1a1a" stroke="#444" stroke-width="0.8"/>
+  <text x="250" y="2248" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#D3D1C7">Brevo SMTP sends email containing:</text>
+  <text x="250" y="2265" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="10" fill="#B4B2A9">Order ID · Items · Total · Address · PDF Receipt</text>
+  <line x1="250" y1="2278" x2="250" y2="2298" stroke="#1D9E75" stroke-width="1.2" marker-end="url(#ag)"/>
+
+  <rect x="100" y="2298" width="300" height="36" rx="8" fill="#082d1f" stroke="#0F6E56" stroke-width="0.8"/>
+  <text x="250" y="2321" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#9FE1CB">User receives email  ✅</text>
+
+  <!-- Formspree -->
+  <rect x="500" y="2114" width="300" height="36" rx="8" fill="#2a0f08" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="650" y="2137" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="12" font-weight="600" fill="#F5C4B3">User fills Contact Form</text>
+  <line x1="650" y1="2150" x2="650" y2="2170" stroke="#D85A30" stroke-width="1.2" marker-end="url(#ac)"/>
+
+  <rect x="460" y="2170" width="380" height="36" rx="8" fill="#2a0f08" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="650" y="2193" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#F0997B">POST formspree.io/f/mnjlloaj  (no Express)</text>
+  <line x1="650" y1="2206" x2="650" y2="2226" stroke="#D85A30" stroke-width="1.2" marker-end="url(#ac)"/>
+
+  <rect x="480" y="2226" width="340" height="36" rx="8" fill="#2a0f08" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="650" y="2249" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#F0997B">Formspree forwards to admin email</text>
+  <line x1="650" y1="2262" x2="650" y2="2282" stroke="#D85A30" stroke-width="1.2" marker-end="url(#ac)"/>
+
+  <rect x="500" y="2282" width="300" height="36" rx="8" fill="#2a0f08" stroke="#993C1D" stroke-width="0.8"/>
+  <text x="650" y="2305" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="11" fill="#F0997B">Success shown to user  ✅</text>
+
+  <!-- divider between email and formspree -->
+  <line x1="450" y1="2104" x2="450" y2="2360" stroke="#2a2a4a" stroke-width="1" stroke-dasharray="4 3"/>
+
+</svg>
